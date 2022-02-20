@@ -20,11 +20,13 @@ public class Question3 {
                 }
             }
         }
+        
         int anagrams = 0;
-        for(String key: map.keySet()){
-            int n = map.get(key);
+        for(String key: mapAnagrams.keySet()){
+            int n = mapAnagrams.get(key);
             anagrams += (n * (n-1))/2;
         }
-        System.out.println(anagrams);
+        
+        System.out.println("O texto possui: " + anagrams + " anagramas!");
 	}
 }
