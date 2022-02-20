@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import br.com.capgemini.questions.Question1;
 import br.com.capgemini.questions.Question2;
+import br.com.capgemini.questions.Question3;
 
 public class main {
 
@@ -11,6 +12,7 @@ public class main {
 		
 		Question1 questOne = new Question1();
 		Question2 questTwo = new Question2();
+		Question3 questThree = new Question3();
 		
 		
 		System.out.println("Desafio Capgemini!");
@@ -20,6 +22,11 @@ public class main {
 		
 		System.out.print("\n2º - Informe a senha: ");
 		questTwo.analyzePassword(scan.next());
+		
+		System.out.print("\n3º - Informe o texto para análise de anagramas: ");
+		questThree.anagramSubstrings(scan.next());
+		
+		System.exit(0);
 	}
 
 }
